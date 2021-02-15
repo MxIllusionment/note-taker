@@ -32,6 +32,11 @@ app.post("/api/notes", (req, res) => {
   let newNote = req.body;
   let noteList = JSON.parse(fs.readFileSync(DBPATH));
 
+  /* Validity check */
+  if (!newNote.title || !newNote.text) {
+    return res.status(400).end();
+  }
+
   /* Create unique ID and add new note to DB */
   newNote.id = uniqid();
   noteList.push(newNote);
