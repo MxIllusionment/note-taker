@@ -41,6 +41,25 @@ app.post("/api/notes", (req, res) => {
   res.json(newNote);
 });
 
+/* DELETE Routes */
+app.delete("/api/notes/:id", (req, res) => {
+  let noteList = JSON.parse(fs.readFileSync(DBPATH));
+
+  /* Search for ID index*/
+  let idx = noteList.findIndex(note => note.id === req.params.id);
+
+  /* Return error code if ID not found */
+  if (idx < 0) {
+    return res.status(404).end();
+  }
+
+  /* Remove element from note list and save */
+  noteList.splice(idx, 1);
+  fs.writeFileSync(DBPATH, JSON.stringify(noteList));
+
+  res.status(200).end();
+});
+
 
 /* Start server */
 app.listen(PORT, () => console.log(`Listening on port ${PORT}...`));
