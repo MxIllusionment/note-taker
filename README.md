@@ -9,6 +9,7 @@ This is an exercise in Express.js and basic API implementation.
 * [Installation](#Installation)
 * [Usage](#Usage)
 * [Screenshot](#Screenshot)
+* [Deployment](#Deployment)
 * [License](#License)
 * [Questions](#Questions)
 
@@ -26,6 +27,9 @@ npm start
 
 ## Screenshot
 ![Screenshot](assets/images/example-screenshot.png)  
+
+## Deployment
+The web application has been deployed on Heroku at http://malenchite-note-taker.herokuapp.com
 
 ## License  
 This application is covered under the **ISC** license. More info can be found here: [ISC](https://opensource.org/licenses/ISC)
