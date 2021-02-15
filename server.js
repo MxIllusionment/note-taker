@@ -54,10 +54,11 @@ app.delete("/api/notes/:id", (req, res) => {
   }
 
   /* Remove element from note list and save */
+  let deletedNote = noteList[idx];
   noteList.splice(idx, 1);
   fs.writeFileSync(DBPATH, JSON.stringify(noteList));
 
-  res.status(200).end();
+  res.status(200).send(deletedNote);
 });
 
 
