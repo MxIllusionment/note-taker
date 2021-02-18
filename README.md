@@ -12,6 +12,7 @@ This is an exercise in Express.js and basic API implementation.
 * [Deployment](#Deployment)
 * [License](#License)
 * [Questions](#Questions)
+* [Credits](#Credits)
 
 ## Installation
 To install, run the following command:
