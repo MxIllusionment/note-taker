@@ -42,6 +42,5 @@ Questions about the project? You can contact me at malenchite@gmail.com or check
 ### NPM Packages:
 * [express](https://www.npmjs.com/package/express)  
 * [uniqid](https://www.npmjs.com/package/uniqid)  
-* [cors](https://www.npmjs.com/package/cors)
 
 Front-end HTML, CSS, and JS were provided as part of an assignment for the UNC Coding Bootcamp.
